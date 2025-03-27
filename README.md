@@ -23,9 +23,6 @@ This repository contains example clients to interact with the [Apexe3 Multi-LLM 
 ## 🧪 Supported Models
 
 You can choose from a variety of LLMs:
-- `Teuken-7B-instruct-research-v0.4`
-- `EuroLLM-9B-Instruct`
-- `EuroLLM-1.7B-Instruct`
 - `gemini-1.5-flash`
 - `gemini-2.0-flash`
 - `gpt-4o-turbo`
