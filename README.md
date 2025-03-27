@@ -1,51 +1,83 @@
 # 🧠 Multi LLM API Examples
 
-This repository provides simple examples for interacting with the [Apexe3 Multi-LLM API](https://unioninvest.apexe3.ai/alice/multi-llm-service/prompt). You can use these clients to prompt different large language models (LLMs) via a unified endpoint.
+This repository contains example clients to interact with the [Apexe3 Multi-LLM API](https://unioninvest.apexe3.ai/alice/multi-llm-service/prompt) and Vision API for image-based prompting.
 
 ## 📂 Files
 
-- `multi-llm-inference.js` – JavaScript example using `fetch` for sending a prompt to the API.
-- `multi-llm-inference.py` – Python example using the `requests` library for the same API interaction.
+### 💬 Text Prompt Inference
+- `multi-llm-inference.js` – JavaScript example using `fetch` to send a text prompt.
+- `multi-llm-inference.py` – Python version using `requests`.
 
-## 🚀 Supported Models
+### 🖼️ Vision API (Image to Text)
+- `multi-llm-vision.py` – Python script for prompting with image files.
+- `multi-llm-vision.js` – Node.js version using `axios` and `form-data`.
 
-Here are some of the available models you can use with the API (configure via the `model` parameter):
+### 🔐 Token Management
+- `test-token.json` – Sample file to store your API key in the format:
+  ```json
+  {
+    "key": "your-token-here"
+  }
+  ```
 
+## 🧪 Supported Models
+
+You can choose from a variety of LLMs:
+- `Teuken-7B-instruct-research-v0.4`
+- `EuroLLM-9B-Instruct`
+- `EuroLLM-1.7B-Instruct`
 - `gemini-1.5-flash`
 - `gemini-2.0-flash`
 - `gpt-4o-turbo`
-- `o1-mini`, `o3-mini`, `o1`
 - `claude-sonnet-3.5`
 - `mistral-large-latest`
 - `grok2`
 - `deepseek`
 - `nemotron`
+- `o1`, `o1-mini`, `o3-mini`
 
-## 🔧 Example Request Payload
+## ▶️ Usage
 
-```json
-{
-  "prompt": "Describe the ETF create and redeem process.",
-  "model": "gemini-2.0-flash",
-  "systemPrompt": "Your job is to summarise earnings transcripts",
-  "maxOutputTokens": 1000,
-  "userId": "your-email@example.com"
-}
+### Text Prompt (Python)
+```bash
+python multi-llm-inference.py
 ```
 
-## ✅ Requirements
+### Text Prompt (Node.js)
+```bash
+node multi-llm-inference.js
+```
 
-- Python: `requests` library (`pip install requests`)
-- JavaScript: Any modern environment with `fetch` support (e.g. Node.js 18+, browser)
+### Vision API (Python)
+```bash
+python multi-llm-vision.py <image_path> <prompt> <model>
+```
+
+### Vision API (Node.js)
+```bash
+node multi-llm-vision.js <image_path> <prompt> <model>
+```
+
+Make sure `test-token.json` is in the same folder.
+
+## 🛠️ Dependencies
+
+- Python: `requests`
+- Node.js: `axios`, `form-data`
+
+Install Node dependencies:
+```bash
+npm install axios form-data
+```
 
 ## 📜 License
 
-This project is licensed under the [Apache 2.0 License](LICENSE).
+Apache 2.0 License. See [LICENSE](LICENSE) for details.
 
-## ✍️ Author
+## 👤 Author
 
 Maintained by [usmane3](https://github.com/usmane3)
 
 ---
 
-Feel free to open issues or pull requests for improvements.
+Feel free to open issues or PRs to extend the client examples!
