@@ -79,7 +79,7 @@ python deleteResource.py
 python deleteIndex.py
 ```
 
-> ⚠️ Ensure `test-token.json` is in the same directory or adjust the scripts accordingly.
+> ⚠️ You will need various credentials to run these examples
 
 ---
 
