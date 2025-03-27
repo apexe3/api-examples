@@ -1,39 +1,55 @@
-# 🧠 Multi LLM API Examples
+# 🧠 Apexe3 API Examples
 
-This repository contains example clients to interact with the [Apexe3 Multi-LLM API](https://unioninvest.apexe3.ai/alice/multi-llm-service/prompt) and Vision API for image-based prompting.
+This repository provides working examples to interact with the **Apexe3 APIs**, including:
 
-## 📂 Files
+- ✅ Multi-LLM API for text-based prompting
+- 🖼️ Vision API for image understanding
+- 📦 Vector Database API for document and index management
 
-### 💬 Text Prompt Inference
-- `multi-llm-inference.js` – JavaScript example using `fetch` to send a text prompt.
-- `multi-llm-inference.py` – Python version using `requests`.
+---
 
-### 🖼️ Vision API (Image to Text)
-- `multi-llm-vision.py` – Python script for prompting with image files.
-- `multi-llm-vision.js` – Node.js version using `axios` and `form-data`.
+## 📁 Folders & Contents
 
-### 🔐 Token Management
-- `test-token.json` – Sample file to store your API key in the format:
+### `multi-llm-*`
+💬 **Multi LLM Inference Clients**
+- `multi-llm-inference.js` – JavaScript client (text prompt)
+- `multi-llm-inference.py` – Python client (text prompt)
+
+🖼️ **Vision API Clients**
+- `multi-llm-vision.js` – Node.js client for image-to-text
+- `multi-llm-vision.py` – Python client for image-to-text
+
+🔐 **Token File**
+- `test-token.json` – Stores API key:
   ```json
   {
-    "key": "your-token-here"
+    "key": "your-api-key"
   }
   ```
 
-## 🧪 Supported Models
+---
 
-You can choose from a variety of LLMs:
-- `gemini-1.5-flash`
-- `gemini-2.0-flash`
-- `gpt-4o-turbo`
-- `claude-sonnet-3.5`
-- `mistral-large-latest`
-- `grok2`
-- `deepseek`
-- `nemotron`
-- `o1`, `o1-mini`, `o3-mini`
+### `apexe3-vector-database-examples`
+📦 **Vector Database Clients**
+- `uploadDoc.py` – Upload a document for vectorization
+- `fetchVectorResources.py` – Retrieve resources from the vector DB
+- `deleteResource.py` – Delete a document/resource
+- `deleteIndex.py` – Delete a full vector index
 
-## ▶️ Usage
+---
+
+## 🧪 Supported LLMs
+
+Apexe3 supports multiple models through the unified LLM API:
+- `Teuken-7B-instruct-research-v0.4`
+- `EuroLLM-9B-Instruct`, `EuroLLM-1.7B-Instruct`
+- `gpt-4o-turbo`, `gemini-1.5-flash`, `gemini-2.0-flash`
+- `claude-sonnet-3.5`, `mistral-large-latest`, `grok2`
+- `deepseek`, `nemotron`, `o1`, `o1-mini`, `o3-mini`
+
+---
+
+## ▶️ How to Run
 
 ### Text Prompt (Python)
 ```bash
@@ -55,26 +71,38 @@ python multi-llm-vision.py <image_path> <prompt> <model>
 node multi-llm-vision.js <image_path> <prompt> <model>
 ```
 
-Make sure `test-token.json` is in the same folder.
+### Vector API Examples
+```bash
+python uploadDoc.py
+python fetchVectorResources.py
+python deleteResource.py
+python deleteIndex.py
+```
 
-## 🛠️ Dependencies
+> ⚠️ Ensure `test-token.json` is in the same directory or adjust the scripts accordingly.
 
-- Python: `requests`
-- Node.js: `axios`, `form-data`
+---
 
-Install Node dependencies:
+## 🛠️ Requirements
+
+### Python
+- `requests`
+
+### Node.js
 ```bash
 npm install axios form-data
 ```
 
+---
+
 ## 📜 License
 
-Apache 2.0 License. See [LICENSE](LICENSE) for details.
+Apache 2.0 License. See [LICENSE](LICENSE).
+
+---
 
 ## 👤 Author
 
 Maintained by [usmane3](https://github.com/usmane3)
 
 ---
-
-Feel free to open issues or PRs to extend the client examples!
