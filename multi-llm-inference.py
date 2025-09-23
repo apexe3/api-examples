@@ -3,6 +3,13 @@ import requests
 # Supported model ids
 # gemini-1.5-flash // gemini-2.0-flash // gpt-4o-turbo // o1-mini // o3-mini // o1
 # claude-sonnet-3.5 // mistral-large-latest // grok2 // deepseek // nemotron
+# gpt-5-chat-latest 
+# grok-4
+# private Qwen/Qwen2.5-VL-72B-Instruct
+# gemini-2.5-pro
+# claude-sonnet-4
+# o3
+
 
 def main():
     url = "<Request url from team APEX:E3>"
