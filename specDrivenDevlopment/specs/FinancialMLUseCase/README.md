@@ -27,6 +27,8 @@ FinancialMLUseCase/
 
 ## Step-by-Step Implementation
 
+DO NOT CLONE THE https://github.com/apexe3/api-examples repository
+
 ### Step 1: Setup Configuration (config.py)
 Create a configuration file with the following parameters:
 - API base URL: `https://alicev2.apexe3.ai/alice/apexe3/datahub/api`
@@ -293,6 +295,7 @@ matplotlib>=3.4.0
 - Handle rate limiting
 - Validate API responses
 - Log all API calls and errors
+- Include a .gitignore which includes the venv entry
 
 ## Data Considerations
 
