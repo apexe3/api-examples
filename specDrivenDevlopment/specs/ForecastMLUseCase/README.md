@@ -19,6 +19,7 @@ The system is guaranteed to run correctly on:
 - Deterministic and reproducible training
 - No undocumented assumptions about NeuralForecast internals
 - DO NOT DOWNLOAD or CLONE https://github.com/apexe3/api-examples github repository
+- Install python 3.9 in the virtual environment and use it
 
 ---
 
