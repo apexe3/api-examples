@@ -30,7 +30,7 @@ FinancialMLUseCase/
 ### Step 1: Setup Configuration (config.py)
 Create a configuration file with the following parameters:
 - API base URL: `https://alicev2.apexe3.ai/alice/apexe3/datahub/api`
-- Default stock symbol (e.g., "AAPL")
+- Default stock symbol S&P 500 (e.g., "^GSPC")
 - Date range for training data
 - LSTM hyperparameters:
   - Sequence length (lookback window)
@@ -67,7 +67,7 @@ Query Parameters:
 **Expected Response Format:**
 ```json
 {
-  "symbol": "AAPL",
+  "symbol": "^GSPC",
   "start_date": "YYYY-MM-DD",
   "end_date": "YYYY-MM-DD",
   "data": [
