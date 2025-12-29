@@ -204,7 +204,8 @@ Implement model evaluation metrics:
 - Method `calculate_directional_accuracy(y_true, y_pred)`:
   - Percentage of correct directional predictions
 - Method `generate_evaluation_report(metrics)`:
-  - Create formatted report with all metrics
+  - Create an advanced dashboard with all metrics
+  - Include an actual price vs predicted price chart using the actual price units
   - Include model performance interpretation
 
 ### Step 8: Main Execution Script (main.py)
