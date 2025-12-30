@@ -1,8 +1,8 @@
-# Spec-Driven Development (SDD) README — minecraft-threejs-clone
+# 3D world with character spec
 
 This document is a **build spec** intended for an AI coding agent to recreate the project behavior of **dgreenheck/minecraft-threejs-clone**: a browser-based Minecraft-like voxel game built with Three.js, featuring procedural world generation, biomes, resources, chunked terrain, terraforming, and save/load. citeturn1view0turn4search4
 
-> Target outcome: running `npm install && npm run dev` launches a local dev server with a playable first‑person voxel world, matching the gameplay loop and controls described below.
+> Target outcome: running `npm install && npm run dev` launches a local dev server with a playable first‑person voxel world, matching the gameplay loop and controls described below. Make sure the working directory is clear.
 
 ---
 
@@ -32,6 +32,7 @@ The recreated project MUST include:
 
 ### 0.3 Build tooling (must)
 Repository is a JavaScript project and includes `package.json`, `vite.config.js`, `index.html`, `style.css`, `scripts/`, and `public/`. The spec below assumes **Vite** + **Three.js** as the primary stack. citeturn1view0
+Build it using Typescript
 
 ---
 
