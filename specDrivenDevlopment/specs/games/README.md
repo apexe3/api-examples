@@ -51,6 +51,11 @@ The player spawns on/near terrain surface and can:
 - look around with mouse (first-person)
 - place blocks (selected by 1–8)
 - break blocks (pickaxe = key 0)
+- the player should have an axe held in a hand
+- create a hand holding a wooden stick
+- at the top of the stick is a green blocky blade
+- when clicking in pickaxe mode, the axe should strike the block using a movement
+- make sure the hand and the axe are clearly visible. so they can be drawn at a distance
 
 ### 1.2 World
 World is a voxel grid represented as chunks (see §3).
@@ -60,7 +65,7 @@ World is a voxel grid represented as chunks (see §3).
 
 ### 1.3 Terraforming
 Player can:
-- remove a targeted block if within reach
+- remove a targeted block if within reach using the axe
 - place a block on a face adjacent to a targeted block (if empty)
 Constraints:
 - Placement cannot intersect the player’s bounding volume
@@ -233,7 +238,7 @@ Persist a single JSON object:
 
 ## 4) Milestones & acceptance tests (agent checklist)
 
-### Milestone A — Build & boot
+### Milestone A — Ask the user to Build & boot using the following instructions
 **Done when:**
 - `npm install` succeeds
 - `npm run dev` serves a page with the start overlay
