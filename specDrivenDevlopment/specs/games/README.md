@@ -240,6 +240,7 @@ Persist a single JSON object:
 
 ### Milestone A — Ask the user to Build & boot using the following instructions
 **Done when:**
+- start on port 8999
 - `npm install` succeeds
 - `npm run dev` serves a page with the start overlay
 - pressing any key starts the game loop and pointer lock citeturn4search4
